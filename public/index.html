@@ -1,1 +1,114 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Göteburgaren</title>
+       <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+    <header>
+        <h1>Välkommen till Göteburgaren</h1>
+        <hr>
+     </header>
+    <main>
+        <section id="hamburgare">
+                <h2>Välj burgare</h2>
+            <div id="Glenns goa"  style="display: inline-block";>
+            <h3>Glenns goa</h3>
+            <img src = "https://img.koket.se/standard-mega/klassisk-amerikansk-hamburgare.jpg" alt = "Span" style = "width: 334px;">
+            <ul>
+            <li>Glenns favorit</li>
+            <li>Tryffelmajo, bacon och cheddarost</li>
+            <li>Serveras med en <div class="textcolor"> öl</div></li>
+            </ul>
+            </div>
+            <div id="Änglarna" style="display: inline-block";>
+            <h3>Änglarna</h3>
+            <img src = "https://res.cloudinary.com/coopsverige/images/w_1200,h_1200/v1485261961/184383/Grekisk+hamburgare.jpg" alt = "Span" style = "width: 250px;">
+            <ul>
+                <li>Änglarnas burgare</li>
+                <li>10 kr går till IFK Gbg</li>
+                <li>Blåvitt-<div class="textcolor">öl</div>glas ingår</li>
+            </ul>
+            </div>
+            <div id="Frölunda" style="display: inline-block";>
+            <h3>Frölunda</h3>
+            <img src = "https://static.cdn-expressen.se/images/ed/79/ed7990bd913c4ecaa07cdb9d76aef545/1x1/1920@80.jpg" alt = "Span" style = "width: 250px;">
+            <ul>
+            <li>Bästsäljare</li>
+            <li>Serveras med sötpotatispommes</li>
+            <li>Väldigt god</li>
+            </ul>
+            </div>
+                <div>Allergisk? Skriv nedan så tar vi bort det.
+                    <form>
+                        <input type="text" id="allergier" name="al" placeholder="Allergier">
+                    </form>
+                </div>
+        
+        </section>
+        <section>
+            <h2>Leveransinformation</h2>
+                <div></div>
+            </section>
+        <section id="contact">
+            <form>
+                <p>
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" id="firstname" name="fn" required="required" placeholder="First name">
+                </p>
+                <p>
+                    <label for="lastname">Last Name</label><br>
+                    <input type="text" id="lastname" name="ln" required="required" placeholder="Last name">
+                </p>
+                <p>
+                    <label for="lastname">Email adress</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="lastname">Street</label><br>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street">
+                </p>
+                <p>
+                    <label for="housenumber">House Number</label><br>
+                    <input type="number" id="housenumber" name="hn" required="required" placeholder="House Number">
+                </p>
+        
+
+            <p>
+                <label for="recipient">Betalning</label><be>
+                <select id="recipient" name="rcp">
+                    <option>Visa</option>
+                    <option>MasterCard</option>
+                    <option>Swish</option>
+                    <option>Apple Pay</option>
+                    <option>Betala vid utkörning</option>
+                </select>
+             </p>
+        
+             <p>
+                <label for="Gender">Kön:</label><br>
+                <input type="radio" id="Male" name="ge" required="required" placeholder="First nam"> //v-model = "namn"
+                <label for="Gender">Man</label><br>
+                <input type="radio" id="Female" name="ge" required="required" placeholder="First name">
+                <label for="Gender">Kvinna</label><br>
+                <input type="radio" id="Other" name="ge" required="required" placeholder="First name">
+                <label for="Gender">Annat</label><br>
+                <input type="radio" id="Vill ej ange" name="ge" required="required" placeholder="First name">
+                <label for="Gender">Vill ej ange</label>
+            </p>   
+            <button id="knapp" type="submit">
+                <img src="data:image/jpeg;base64,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" alt = order title = order style = "width: 100px;"><br>
+              Beställ
+            </button>
+            </form>
+        </section>
+        
+
+
+     </main>
+     <footer>
+        End notes
+     </footer>
+   </body>
+</html>
