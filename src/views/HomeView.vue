@@ -4,6 +4,7 @@
       Burgers
       <Burger v-for="burger in burgers"
               v-bind:burger="burger" 
+              v-on:selectedB="setSelectedBurger($event)"
               v-bind:key="burger.name"/>
     </div>
     <div id="map" v-on:click="addOrder">
@@ -25,6 +26,7 @@ export default {
   },
   data: function () {
     return {
+      selectedBurger
       burgers: [ {name: "small burger", kCal: 250},
                  {name: "standard burger", kCal: 450},
                  {name: "large burger", kCal: 850}

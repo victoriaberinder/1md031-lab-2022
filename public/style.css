@@ -1,1 +1,67 @@
-/*empty*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+
+.textcolor {
+    color: rgb(255, 116, 139);
+    display: inline-block;
+}
+.front {
+    overflow:hidden;
+    margin: 15px 25px 25px 25px;
+   
+}
+#bildfront {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#textfront {
+    position: absolute;
+    margin-top: -50%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 100%;
+}
+
+#Hamburgare {
+    background-color:rgb(79, 151, 171);
+    color: antiquewhite;
+    margin: 15px 25px 25px 25px;
+    border: 3px solid black;
+    border-radius: 25px;
+
+}
+
+#bildburger {
+    height: 150px;
+    width: 90%;
+}
+
+#information {
+    margin: 20px 0px;
+    background-color: rgb(255, 116, 139);
+    margin: 15px 25px 25px 25px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+#knapp {
+    cursor: pointer;
+}
